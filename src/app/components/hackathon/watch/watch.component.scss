@@ -1,6 +1,7 @@
 @import "~swiper/css";
 @import "~swiper/css/pagination";
 
+
 .swiper .swiper-pagination {
   display: none !important;
 }
@@ -34,4 +35,38 @@
 
 #watch-component {
   padding: 16px !important;
+}
+
+.text-about {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 49px;
+  color: #005289;
+}
+
+
+.text-about-explain {
+  margin-top: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #7D7D7D;
+}
+
+
+.start-picture {
+  width: 100%;
+  margin-top: 1rem;
+  box-shadow: none;
+}
+
+.titleCarousel {
+
+  font-style: normal;
+  font-weight: 600 ;
+  font-size: 20px;
+  line-height: 49px;
+  color: #005289;
 }

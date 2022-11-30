@@ -1,4 +1,8 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnInit, ViewEncapsulation} from '@angular/core';
+import {DividerModule} from 'primeng/divider';
+import {CarouselModule} from 'primeng/carousel';
+import {CardModule} from 'primeng/card';
+
 
 @Component({
     selector: 'app-watch',
