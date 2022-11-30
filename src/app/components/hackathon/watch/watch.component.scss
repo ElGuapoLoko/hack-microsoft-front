@@ -12,7 +12,7 @@
 }
 
 .heigthCards {
-  height: 25vh;
+  height: 55vh;
 }
 
 .swiper {
@@ -69,4 +69,26 @@
   font-size: 20px;
   line-height: 49px;
   color: #005289;
+}
+
+
+.cards-material {
+  display: flex;
+  overflow-x: auto;
+  height: 290px;
+ gap: 5px;
+ text-align: center;
+
+}
+
+.tumb {
+  margin: 0 10px;
+  width: 150px;
+  height: 150px;
+  background-color: red;
+  border-radius: 10px;
+}
+
+p-card{
+  padding: 20px !important;
 }
