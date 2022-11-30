@@ -9,28 +9,127 @@
             </div>
         </div>
 
-        <div class="col-12 mb-2">
 
-            <span class="p-float-label">
-            <p-multiSelect [showHeader]="false" id="bank" class="selectBankStore"
-                           [options]="companies" optionLabel="name" optionValue="id"
-                           display="chip"
-                           selectionLimit="1"></p-multiSelect>
-            <label for="bank">Selecione a instituição</label>
-    </span>
-        </div>
+        <p-divider type="dashed">
+            <div class="inline-flex align-items-center">
+                <i class="pi pi-user mr-2"></i>
+                <b>Usuário</b>
+            </div>
+        </p-divider>
+
         <div class="col-12 mb-2">
-        <span class="p-float-label col-12">
-            <input type="text" id="graduation" class="w-full" pInputText>
-            <label for="graduation">Graduação</label>
-        </span>
+            <span class="p-float-label col-12">
+                <input type="text" id="Nome" class="w-full" pInputText>
+                <label for="fullName">Nome</label>
+            </span>
         </div>
+
+        <div class="col-12 mb-2">
+            <span class="p-float-label col-12">
+                <p-inputMask id="phone" value="#{maskView.phone}" mask="+55 (99) 9999-9999" validateMask="true"></p-inputMask>
+                <label for="phone">Telefone</label>
+            </span>
+        </div>
+
+        <div class="col-12 mb-2">
+            <span class="p-float-label col-12">
+                <input type="email" id="seuemail@gmail.com" class="w-full" pInputText>
+                <label for="mail">E-mail</label>
+            </span>
+        </div>
+
         <div class="col-12 mb-2">
             <span class="p-float-label col-12">
                 <p-inputMask id="birth" mask="99/99/9999" class="w-full" slotChar="dd/mm/aaaa"></p-inputMask>
                 <label for="birth">Data de nascimento</label>
             </span>
         </div>
+
+        <p-divider type="dashed">
+            <div class="inline-flex align-items-center">
+                <i class="pi pi-home mr-2"></i>
+                <b>Endereço</b>
+            </div>
+        </p-divider>
+
+        <div class="col-12 mb-2">
+            <span class="p-float-label col-12">
+                <input type="text" id="street" class="w-full" pInputText>
+                <label for="street">Logradouro</label>
+            </span>
+        </div>
+
+        <div class="col-12 mb-2">
+            <span class="p-float-label col-12">
+                <input type="number" id="street" class="w-full"s pInputText>
+                <label for="street">CEP</label>
+            </span>
+        </div>
+
+        <div class="col-12 mb-2">
+            <span class="p-float-label col-12">
+                <input type="number" id="numberHome" class="w-full" pInputText>
+                <label for="numberHome">Número</label>
+            </span>
+        </div>
+
+        <p-divider type="dashed">
+            <div class="inline-flex align-items-center">
+                <i class="pi pi-user-plus mr-2"></i>
+                <b>Responsável</b>
+            </div>
+        </p-divider>
+
+        <div class="col-12 mb-2">
+            <span class="p-float-label col-12">
+                <input type="text" id="Nome" class="w-full" pInputText>
+                <label for="fullName">Nome</label>
+            </span>
+        </div>
+
+        <div class="col-12 mb-2">
+            <span class="p-float-label col-12">
+                <p-inputMask id="phone" value="#{maskView.phone}" mask="+55 (99) 9999-9999" validateMask="true"></p-inputMask>
+                <label for="phone">Telefone</label>
+            </span>
+        </div>
+
+        <div class="col-12 mb-2">
+            <span class="p-float-label col-12">
+                <input type="email" id="seuemail@gmail.com" class="w-full" pInputText>
+                <label for="mail">E-mail</label>
+            </span>
+        </div>
+
+        <div class="col-12 mb-2">
+            <span class="p-float-label col-12">
+                <input type="number" id="cpf" class="w-full" pInputText>
+                <label for="cpf">CPF</label>
+            </span>
+        </div>
+
+        <div class="col-12 mb-2">
+            <span class="p-float-label col-12">
+                <input type="number" id="rg" class="w-full" pInputText>
+                <label for="rg">RG</label>
+            </span>
+        </div>
+
+        <!-- <div class="col-12 mb-2">
+
+            <span class="p-float-label">
+                <p-multiSelect [showHeader]="false" id="bank" class="selectBankStore" [options]="companies"
+                    optionLabel="name" optionValue="id" display="chip" selectionLimit="1"></p-multiSelect>
+                <label for="bank">Selecione a instituição</label>
+            </span>
+        </div>
+        <div class="col-12 mb-2">
+            <span class="p-float-label col-12">
+                <input type="text" id="graduation" class="w-full" pInputText>
+                <label for="graduation">Graduação</label>
+            </span>
+        </div>
+
         <div class="col-12 mb-2">
             <span class="p-float-label col-12">
                 <input type="text" id="motherName" class="w-full" pInputText>
@@ -42,18 +141,18 @@
                 <p-inputNumber class="w-full" id="age"></p-inputNumber>
                 <label for="age">Idade</label>
             </span>
-        </div>
+        </div>-->
         <div class="col-12 mb-2 inline-flex justify-content-around align-items-center ">
             <span>Possui nescessidades especiais?</span>
             <p-inputSwitch [(ngModel)]="special"></p-inputSwitch>
         </div>
 
         <div *ngIf="special" class="col-12 mb-2">
-        <span class="p-float-label col-12">
-            <input type="text" id="description-speacial" class="w-full" pInputText>
-            <label for="description-speacial">Qual?</label>
-        </span>
-        </div>
+            <span class="p-float-label col-12">
+                <input type="text" id="description-speacial" class="w-full" pInputText>
+                <label for="description-speacial">Qual?</label>
+            </span>
+        </div> 
 
         <div class="col-12">
             <div class="col-12 md:col-4">
