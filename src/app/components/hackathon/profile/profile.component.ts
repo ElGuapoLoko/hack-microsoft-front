@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {DividerModule} from 'primeng/divider';
-import {InputNumberModule} from 'primeng/inputnumber';
+import {InputNumberModule} from 'primeng/inputnumber'; 
 
 @Component({
   selector: 'app-profile',
